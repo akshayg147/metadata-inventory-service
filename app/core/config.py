@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 
     # MongoDB
     mongo_uri: str = Field(
-        default="mongodb+srv://akshay:akshay123@cluster0.cje9qje.mongodb.net/",
+        default="mongodb://localhost:27017",
         description="MongoDB connection URI",
     )
     mongo_db_name: str = Field(
